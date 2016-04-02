@@ -401,7 +401,7 @@ namespace MarkHeath.MidiUtils
         private bool IsEndTrack(MidiEvent midiEvent)
         {
             var meta = midiEvent as MetaEvent;
-            return meta?.MetaEventType == MetaEventType.EndTrack;
+            return meta.MetaEventType == MetaEventType.EndTrack;
         }
 
         private void AppendEndMarker(IList<MidiEvent> eventList)
